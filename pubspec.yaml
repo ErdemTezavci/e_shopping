@@ -18,7 +18,6 @@ dependencies:
   intl: ^0.18.1
   logger: ^2.0.1
   url_launcher: ^6.1.12
-  carousel_slider: ^5.0.0
   smooth_page_indicator: ^1.2.0+3
 
   # Icons
@@ -30,7 +29,9 @@ dependencies:
   get_storage: ^2.1.1
 
   # Product Specific
-
+  readmore: ^2.2.0
+  carousel_slider: ^5.0.0
+  flutter_rating_bar: ^4.0.1
 
  #-------------./ PACKAGES END -------------#
   
@@ -72,6 +73,7 @@ flutter:
     - assets/images/banners/
     - assets/images/products/
     - assets/images/content/
+    - assets/images/reviews/
 
 #------------- LOCAL FONTS -------------#
   fonts:

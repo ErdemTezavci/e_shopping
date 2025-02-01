@@ -5,7 +5,7 @@ import 'package:e_shopping/common/widgets/images/t_rounded_image.dart';
 import 'package:e_shopping/common/widgets/products/cart/product_price_text.dart';
 import 'package:e_shopping/common/widgets/texts/product_title_text.dart';
 import 'package:e_shopping/common/widgets/texts/t_brand_title_text_with_%20verified_icon.dart';
-import 'package:e_shopping/features/personalization/screens/product_details/product_details.dart';
+import 'package:e_shopping/features/shop/screens/product_details/product_details.dart';
 import 'package:e_shopping/utils/constans/colors.dart';
 import 'package:e_shopping/utils/constans/image_strings.dart';
 import 'package:e_shopping/utils/constans/sizes.dart';

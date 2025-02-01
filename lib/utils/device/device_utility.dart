@@ -88,7 +88,7 @@ class TDeviceUtils {
         overlays: SystemUiOverlay.values);
   }
 
-  static Future<bool> hasInternetCOnnetcion() async {
+  static Future<bool> hasInternetConnetcion() async {
     try {
       final result = await InternetAddress.lookup('example.com');
       return result.isNotEmpty && result[0].rawAddress.isNotEmpty;
