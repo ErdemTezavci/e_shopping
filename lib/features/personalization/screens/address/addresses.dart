@@ -1,5 +1,4 @@
 import 'package:e_shopping/common/widgets/appbar/appbar.dart';
-import 'package:e_shopping/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_shopping/features/personalization/screens/address/add_new_addresses.dart';
 import 'package:e_shopping/features/personalization/screens/address/widgets/single_address.dart';
 import 'package:e_shopping/utils/constans/colors.dart';
@@ -16,8 +15,8 @@ class UserAddressScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () => Get.to(() => const AddNewAddressesScreen()),
-        child: const Icon(Iconsax.add, color: TColors.white),
         backgroundColor: TColors.primary,
+        child: const Icon(Iconsax.add, color: TColors.white),
       ),
       appBar: TAppBar(
         showBackArrow: true,

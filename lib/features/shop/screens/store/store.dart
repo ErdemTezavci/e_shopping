@@ -3,13 +3,15 @@ import 'package:e_shopping/common/widgets/appbar/tabbar.dart';
 import 'package:e_shopping/common/widgets/brands/brand_card.dart';
 import 'package:e_shopping/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:e_shopping/common/widgets/layouts/grid_layout.dart';
-import 'package:e_shopping/common/widgets/products.cart/cart_menu_icon.dart';
+import 'package:e_shopping/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:e_shopping/common/widgets/texts/section_heading.dart';
+import 'package:e_shopping/features/shop/screens/brand/all_brands.dart';
 import 'package:e_shopping/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:e_shopping/utils/constans/colors.dart';
 import 'package:e_shopping/utils/constans/sizes.dart';
 import 'package:e_shopping/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -48,7 +50,7 @@ class StoreScreen extends StatelessWidget {
                     const SizedBox(height: TSizes.spaceBtwSections),
       
                     /// Featured Brands
-                    TSectionHeading(title: 'Featured Brands', showActionButton: true, onPressed: () {}),
+                    TSectionHeading(title: 'Featured Brands', showActionButton: true, onPressed: () => Get.to(() => const AllBrandsScreen())),
                     const SizedBox(height: TSizes.spaceBtwItems / 1.5),
       
                     /// -- Brands GRID
