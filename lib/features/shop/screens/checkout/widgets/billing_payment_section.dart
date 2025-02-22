@@ -7,7 +7,7 @@ import 'package:e_shopping/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TBillingPaymentSection extends StatelessWidget {
-  const TBillingPaymentSection({Key? key}) : super(key: key);
+  const TBillingPaymentSection({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CartScreen extends StatelessWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  const CartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: TAppBar(showBackArrow: true, title: Text('Cart', style: Theme.of(context).textTheme.headlineSmall)),
       body: const Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
+        padding: EdgeInsets.all(TSizes.defaultSpace),
 
         /// Items in Cart
         child: TCartItems(),

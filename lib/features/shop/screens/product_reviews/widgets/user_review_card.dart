@@ -53,7 +53,7 @@ class UserReviewCard extends StatelessWidget {
         TRoundedContainer(
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
           child: Padding(
-            padding: EdgeInsets.all(TSizes.md),
+            padding: const EdgeInsets.all(TSizes.md),
             child: Column(
               children: [
                 Row(
@@ -69,8 +69,8 @@ class UserReviewCard extends StatelessWidget {
                   trimMode: TrimMode.Line,
                   trimExpandedText: ' show less',
                   trimCollapsedText: ' show more',
-                  moreStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
-                  lessStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
+                  moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
+                  lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
                 ),
               ],
             ),

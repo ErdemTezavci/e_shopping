@@ -1,20 +1,30 @@
 import 'package:e_shopping/app.dart';
+import 'package:e_shopping/data/repositories/authentication_repository.dart';
+import 'package:e_shopping/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
-import 'firebase_options.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 Future<void> main() async {
 
-  //Todo: Add Widgets Binding
-  //Todo: Init local storage
-  //Todo: Await Naitvesplash
-  //Todo: Initilaze Firebase
+  // Widgets Binding
+  final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+
+  // -- GetX local storage
+  await GetStorage.init();
+  
+  // -- Await splash until other itemsload
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+
+  //Todo: Initilaze Firebase & Authentication Repository
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then(
-    (FirebaseApp value) => Get.put(AuthenticationRepository())
+    (FirebaseApp value) => Get.put(AuthenticationRepository()),
   );
 
-  //Todo: Initilaze Authentication
+
 
   runApp(const App());
 }

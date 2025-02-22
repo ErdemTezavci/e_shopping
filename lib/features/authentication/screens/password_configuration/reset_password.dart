@@ -24,7 +24,7 @@ class ResetPassword extends StatelessWidget {
           child: Column(
             children: [
               /// Image
-              Image(image: AssetImage(TImages.deliveredEmailIllustration), width: THelperFunctions.screenwidth() * 0.6),
+              Image(image: const AssetImage(TImages.deliveredEmailIllustration), width: THelperFunctions.screenwidth() * 0.6),
               const SizedBox(height: TSizes.spaceBtwSections),
 
               ///  Title & SubTitle
@@ -38,7 +38,7 @@ class ResetPassword extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwItems),
               SizedBox(
                 width: double.infinity,
-                child: TextButton(onPressed: () {}, child: Text(TTexts.resendEmail)),
+                child: TextButton(onPressed: () {}, child: const Text(TTexts.resendEmail)),
               )
 
             ],

@@ -25,6 +25,7 @@ class THelperFunctions {
     } else if (value == 'Yellow') {
       return Colors.yellow;
     }
+    return null;
   }
 
   static void showAlert(String title, String message) {

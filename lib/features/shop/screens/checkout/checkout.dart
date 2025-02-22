@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CheckoutScreen extends StatelessWidget {
-  const CheckoutScreen({Key? key}) : super(key: key);
+  const CheckoutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,15 +47,15 @@ class CheckoutScreen extends StatelessWidget {
                   children: [
                     /// Pricing
                     TBillingAmountSection(),
-                    const SizedBox(height: TSizes.spaceBtwItems),
+                    SizedBox(height: TSizes.spaceBtwItems),
 
                     /// Divider
-                    const Divider(),
-                    const SizedBox(height: TSizes.spaceBtwItems),
+                    Divider(),
+                    SizedBox(height: TSizes.spaceBtwItems),
 
                     /// Payment Methods
                     TBillingPaymentSection(),
-                    const SizedBox(height: TSizes.spaceBtwItems),
+                    SizedBox(height: TSizes.spaceBtwItems),
 
                     /// Address
                     TBillingAddressSection(),

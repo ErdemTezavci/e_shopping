@@ -19,7 +19,7 @@ class TCartItems extends StatelessWidget {
             return Column(
               children: [
                 /// Cart Item
-                TCartItem(),
+                const TCartItem(),
                 if(showAddRemoveButton) const SizedBox(height: TSizes.spaceBtwItems),
 
                 /// Add Remove Button Row with total Price
